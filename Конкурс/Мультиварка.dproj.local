@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.558,C:\Users\Home\Documents\RAD Studio\Projects\Main.pas=C:\Users\Home\Desktop\Конкурс\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.387,C:\Users\Home\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\Home\Documents\RAD Studio\Projects\Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.563,C:\Users\Home\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Home\Documents\RAD Studio\Projects\Мультиварка.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.728,C:\Users\Home\Documents\RAD Studio\Projects\Мультиварка.dproj=C:\Users\Home\Desktop\Конкурс\Мультиварка.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.814,C:\Users\Home\Desktop\Конкурс\Unit1.pas=C:\Users\Home\Desktop\Конкурс\ClassesUnit.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.920,=C:\Users\Home\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.387,C:\Users\Home\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Home\Documents\RAD Studio\Projects\Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.601,=C:\Users\Home\Desktop\Конкурс\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.558,C:\Users\Home\Documents\RAD Studio\Projects\Main.dfm=C:\Users\Home\Desktop\Конкурс\Main.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

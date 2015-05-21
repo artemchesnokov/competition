@@ -1,0 +1,77 @@
+unit Main;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, ClassesUnit, Vcl.Menus,
+  Data.DB, Data.Win.ADODB;
+
+type
+  TForm1 = class(TForm)
+    OKButton: TButton;
+    PauseButton: TButton;
+    EscapeButton: TButton;
+    WeightEdit: TEdit;
+    ReceptionComboBox: TComboBox;
+    TemperatureEdit: TEdit;
+    TimeEdit: TEdit;
+    WeightLabel: TLabel;
+    ReceptionLabel: TLabel;
+    TemperatureLabel: TLabel;
+    Label1: TLabel;
+    CheckBox1: TCheckBox;
+    MainMenu: TMainMenu;
+    FileMainMenu: TMenuItem;
+    AddPrescriptionSubMenu: TMenuItem;
+    QuitSubMenu: TMenuItem;
+    ADOConnection1: TADOConnection;
+    ADODataSet1: TADODataSet;
+    ADODataSet1id: TAutoIncField;
+    ADODataSet1product_type: TWideStringField;
+    ADODataSet1product_weight: TBCDField;
+    ADODataSet1temperature: TIntegerField;
+    ADODataSet1cooking_time: TIntegerField;
+    procedure FormShow(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure OKButtonClick(Sender: TObject);
+    procedure QuitSubMenuClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  Event: LogFileClass;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  Event := LogFileClass.Create;
+end;
+
+
+procedure TForm1.OKButtonClick(Sender: TObject);
+begin
+if CheckBox1.Checked = false then
+  begin
+    Event.ShowMessageEvent('Вы не включили мультиварку!');
+  end;
+end;
+
+procedure TForm1.QuitSubMenuClick(Sender: TObject);
+begin
+  Form1.Close;
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  Event.Destroy;
+end;
+end.
